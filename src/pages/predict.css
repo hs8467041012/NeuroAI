@@ -1,0 +1,150 @@
+.predict-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+  }
+  
+  .predict-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alzheimer-stages {
+    margin-bottom: 3rem;
+  }
+  
+  .alzheimer-stages h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .stages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .stage-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stage-card h3 {
+    font-size: 1.25rem;
+    color: #2980b9;
+    margin-bottom: 1rem;
+  }
+  
+  .stage-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .analysis-section {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .analysis-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .analysis-card h2 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .analysis-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .analysis-card label {
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .analysis-card input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .analysis-card button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .analysis-card button:hover:not(:disabled) {
+    background-color: #2980b9;
+  }
+  
+  .analysis-card button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .image-preview {
+    margin-top: 1rem;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .result {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+  }
+  
+  .result h3 {
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .predict-title {
+      font-size: 2rem;
+    }
+  
+    .stages-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

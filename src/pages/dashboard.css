@@ -1,0 +1,221 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: linear-gradient(135deg, #65bcf6 0%, #fda085 100%);
+    min-height: 100vh;
+  }
+  
+  .welcome-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 0.5rem;
+  }
+  
+  .disease-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .disease-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .disease-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .disease-card .card-title {
+    font-size: 1.25rem;
+    color: #2c3e50;
+  }
+  
+  .disease-card p {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .health-trends, .medical-records, .appointment-calendar, .recent-activity {
+    margin-bottom: 2rem;
+  }
+  
+  .trend-chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 200px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .bar {
+    width: 60px;
+    background: linear-gradient(to top, #3498db, #2980b9);
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    transition: height 0.5s ease;
+  }
+  
+  .bar span {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    color: #34495e;
+    white-space: nowrap;
+  }
+  
+  .trend-data {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .trend-data h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .trend-data ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .trend-data li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .trend-data li::before {
+    content: '•';
+    color: #e74c3c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .prevention-tips {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prevention-tips h3 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .prevention-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .prevention-tips li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .prevention-tips li::before {
+    content: '•';
+    color: #e74c3c;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .record-list, .activity-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .record-list li, .activity-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .calendar-placeholder {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .calendar-placeholder p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .disease-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .welcome-title {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .trend-chart {
+      height: 150px;
+    }
+  
+    .bar {
+      width: 40px;
+    }
+  }
+  
+  
