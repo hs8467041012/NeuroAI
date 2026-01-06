@@ -21,7 +21,7 @@ MRI image resizing
 Normalization for consistent pixel scaling
 Dataset balancing using Stratified splitting
 
-🔹 2. Data Augmentation
+ 2. Data Augmentation
 Implemented using ImageDataGenerator:
 Rotation
 Zoom
